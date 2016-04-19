@@ -1,0 +1,34 @@
+//program perhitungan luas dan keliling bangun datar (persegi panjang dan segitiga sama sisi)
+
+#include <iostream>
+using namespace std;
+
+void main()
+{
+  float panjang, lebar, alas, tinggi, luas_segitiga, luas_persegi_panjang, keliling;
+
+  cout<<"Masukkan nilai panjang = ";
+  cin>>panjang;
+  cout<<"Masukkan nilai lebar = ";
+  cin>>lebar;
+
+  luas_persegi_panjang=panjang*lebar;
+  cout<<"Luas persegi panjang adalah = " <<luas_persegi_panjang<<endl;
+ 
+
+  cout<<"Masukkan nilai alas = ";
+  cin>>alas;
+  cout<<"Masukkan nilai tinggi = ";
+  cin>>tinggi;
+
+  luas_segitiga=(alas*tinggi)/2;
+  cout<<"Luas segitiga adalah = "<<luas_segitiga<<endl;
+
+
+  cout<<"Luas Bangun Datar adalah = " <<luas_persegi_panjang+luas_segitiga<<endl;
+  cout<<"Keliling Bangun Datar adalah = "<<2*panjang+lebar+2*alas<<endl;
+
+ system("pause");
+}
+
+	
